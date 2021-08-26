@@ -1,0 +1,634 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.s-1{
+    width: 100vw;
+}
+
+/* =================================== */
+/* NAVBAR STARTS */
+/* =================================== */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7vw;
+    transition: 0.5s;
+    z-index: 10000;
+}
+
+
+
+header.sticky{
+    height: 5vw; 
+    background-color: white;
+    /* backdrop-filter: blur(10px); */
+}
+
+.logo{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 10px 10px 10px 20px;
+    transition: 0.5s;
+}
+
+.nav{
+    display: flex;
+    width: 40%;
+    margin: 10px;
+}
+#nav-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#nav-list li{
+    list-style-type: none;
+}
+#nav-list a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#nav-list a:hover{
+    color: #185ADB;
+}
+
+
+header.sticky #nav-list li a{
+    font-size: 0.9em;
+    color: black;
+}
+header.sticky #nav-list li a:hover{
+    color: #185ADB;
+}
+header.sticky .logo{
+    color: black;
+}
+
+
+/* =================================== */
+/* NAVBAR ENDS */
+/* =================================== */
+
+/* =================================== */
+/* HERO SECTION STARTS */
+/* =================================== */
+.Hero{
+    display: flex;
+    width: 100vw;
+}
+#tagline{
+    position: absolute;
+    left: 8%;
+    top: 35%;
+    width: 50%;
+    display: flex;
+    z-index: 10;
+}
+#tagline p{
+    text-transform: uppercase;
+    color: white;
+    font-size: 5em;
+    font-weight: bolder;
+}
+.btn{
+    position: absolute;
+    left: 8%;
+    top: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    z-index: 10;
+}
+#btn-hero{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+    color: white;
+    background-color: #185ADB;
+    outline: none;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+#btn-hero:hover{
+    background-color: #1149b8;
+}
+.playBack{
+    display: flex;
+    width: 100vw;
+}
+.playBack video{
+    width: 100%;
+}
+
+/* =================================== */
+/* HERO SECTION ENDS */
+/* =================================== */
+
+/* =================================== */
+/* MINI GALLERY SECTION STARTS */
+/* =================================== */
+.s-2{
+    width: 100%;
+}
+.s-2-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3%;
+}
+#s-2-h-1{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#s-2-h-2{
+    color: rgb(99, 99, 99);
+    margin-bottom: 40px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    margin-bottom: 50px;
+    width: 250px;
+    height: 350px;
+    border-radius: 1px;
+    box-shadow: -3px 50px 101px -28px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 50px 101px -28px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 50px 101px -28px rgba(0,0,0,0.75);
+}
+.card img{
+    width: 100%;
+}
+/* =================================== */
+/* MINI GALLERY SECTION ENDS */
+/* =================================== */
+
+/* =================================== */
+/* OUR PARTNERS SECTION STARTS */
+/* =================================== */
+.s-3{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.s-3-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3%;
+}
+#s-3-h-1{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.s-3-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.p1, .p2, .p3, .p4, .p5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 200px;
+}
+
+.s-3-container img{
+    height: 100%;
+}
+.p5 img{
+    height: 70%;
+}
+/* =================================== */
+/* OUR PARTNERS SECTION ENDS */
+/* =================================== */
+
+/* =================================== */
+/* OUR POPULAR PRODUCTS SECTION STARTS */
+/* =================================== */
+
+.s-4{
+    width: 100%;
+    margin: 5% 0;
+}
+.s-4-head{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#s-4-h-1{
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+}
+.s-4-P-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 60vh;
+    margin-top: 10%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#P-1-h{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+.P-1-p{
+    margin-bottom: 5%;
+}
+.img{
+    width: 50%;
+}
+.img img{
+    width: 100%;
+}
+.s-4-P-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 60vh;
+    margin-top: 10%;
+}
+#P-2-h{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+.P-2-p{
+    margin-bottom: 5%;
+}
+
+.s-4-P-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 60vh;
+    margin-top: 10%;
+}
+#P-3-h{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+.P-3-p{
+    margin-bottom: 5%;
+}
+
+/* =================================== */
+/* OUR POPULAR PRODUCTS SECTION ENDS */
+/* =================================== */
+
+/* =================================== */
+/* FOOTER SECTION STARTS */
+/* =================================== */
+.s-5{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+.foot-logo{
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+.foot-logo img{
+    width: 100%;
+}
+#quick{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+#quick li{
+    margin-bottom: 8%;
+}
+#quick li a{
+    text-decoration: none;
+    color: white;
+}
+#quick li a:hover{
+    text-decoration: underline;
+}
+#contactUs{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+#contactUs li{
+    margin-bottom: 8%;
+}
+#contactUs li a{
+    text-decoration: none;
+    color: white;
+}
+#contactUs li a:hover{
+    text-decoration: underline;
+}
+.lottie{
+    display: flex;
+}
+.copyright{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/* =================================== */
+/* FOOTER SECTION ENDS */
+/* =================================== */
+
+
+/* =================================== */
+/* MEDIA QUESRIES STARTS */
+/* =================================== */
+
+/* LAPTOP VIEW */
+@media only screen and (min-width: 500px) and (max-width: 1185px){
+    #tagline{
+        top: 30%;
+    }
+    #tagline p{
+        font-size: 4.5em;
+    }
+    .btn{
+        top: 60%;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1080px){
+    .logo{
+        font-size: 1em;
+    }
+    #nav-list a{
+        font-size: 0.9em;
+    }
+    header.sticky #nav-list li a{
+        font-size: 0.9em;
+    }
+
+
+    #tagline{
+        top: 20%;
+    }
+    #tagline p{
+        font-size: 4em;
+    }
+    .btn{
+        top: 45%;
+    }
+
+    .s-4-P-1, .s-4-P-2, .s-4-P-3{
+        height: 40vh;
+    }
+}
+@media only screen and (min-width: 850px) and (max-width: 950px){
+    #tagline{
+        top: 15%;
+    }
+    #tagline p{
+        font-size: 3em;
+    }
+    .btn{
+        top: 35%;
+    }
+
+    .content{
+        width: 80%;
+    }
+    .s-4-P-1, .s-4-P-3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    .s-4-P-2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+}
+@media only screen and (min-width: 680px) and (max-width: 850px){
+    #nav-list a{
+        font-size: 0.7em;
+    }
+    header.sticky #nav-list li a{
+        font-size: 0.7em;
+    }
+
+    #tagline{
+        top: 15%;
+    }
+    #tagline p{
+        font-size: 2.7em;
+    }
+    .btn{
+        top: 35%;
+    }
+
+    .content{
+        width: 80%;
+    }
+    .s-4-P-1, .s-4-P-3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    .s-4-P-2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+
+    footer{
+        height: auto;
+        flex-direction: column;
+    }
+    #quick{
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 550px) and (max-width: 680px){
+    #nav-list a{
+        font-size: 0.5em;
+    }
+    header.sticky #nav-list li a{
+        font-size: 0.5em;
+    }
+
+    #tagline{
+        top: 12%;
+    }
+    #tagline p{
+        font-size: 2.3em;
+    }
+    .btn{
+        height: 40px;
+        width: 120px;
+        top: 25%;
+    }
+    #btn-hero{
+        font-size: 1em;
+    }
+
+    .content{
+        width: 80%;
+    }
+    .s-4-P-1, .s-4-P-3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    .s-4-P-2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    footer{
+        height: auto;
+        flex-direction: column;
+    }
+    #quick{
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 550px){
+    header{
+      justify-content: flex-start;  
+    }
+    header.sticky{
+        justify-content: flex-start;
+    }
+    .nav{
+        width: 60%;
+    }
+    .logo{
+        font-size: 1em;
+    }
+    header.sticky .logo{
+        font-size: 1em;
+    }
+    #nav-list a{
+        font-size: 0.5em;
+    }
+    header.sticky #nav-list li a{
+        font-size: 0.5em;
+    }
+
+    #tagline{
+        width: 80%;
+        top: 10%;
+    }
+    #tagline p{
+        font-size: 2em;
+    }
+    .btn{
+        height: 40px;
+        width: 120px;
+        top: 20%;
+    }
+    #btn-hero{
+        font-size: 1em;
+    }
+
+    #s-2-h-1{
+        font-size: 1.5em;
+    }
+    #s-2-h-2{
+        font-size: 1em;
+        width: 300px;
+        text-align: center;
+    }
+
+
+    .content{
+        width: 80%;
+    }
+    .s-4-P-1, .s-4-P-3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    .s-4-P-2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    footer{
+        height: auto;
+        flex-direction: column;
+    }
+    #quick{
+        margin-bottom: 50px;
+    }
+}
